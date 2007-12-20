@@ -13,6 +13,7 @@ URL:		http://search.cpan.org/dist/%{realname}/
 Source:		%{realname}-%{version}.tar.bz2
 BuildRequires:	perl(Devel::Caller)
 BuildRequires:  perl-devel
+Buildroot:	%{_tmppath}/%{name}-root
 
 %description
 Devel::LexAlias provides the ability to alias a lexical variable in a
