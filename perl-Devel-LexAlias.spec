@@ -1,7 +1,7 @@
 %define realname Devel-LexAlias
 %define name	perl-%{realname}
 %define version	0.04
-%define release	%mkrel 4
+%define release	%mkrel 6
 
 Summary:	Alias lexical variables
 Name:		%{name}
