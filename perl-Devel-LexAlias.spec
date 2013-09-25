@@ -1,15 +1,15 @@
 %define upstream_name    Devel-LexAlias
-%define upstream_version 0.04
+%define upstream_version 0.05
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	6
+Release:	1
 
 Summary:	Alias lexical variables
 License:	Artistic/GPL
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}/
-Source0:	http://www.cpan.org/modules/by-module/Devel/%{upstream_name}-%{upstream_version}.tar.bz2
+Source0:	http://www.cpan.org/modules/by-module/Devel/Devel-LexAlias-%{upstream_version}.tar.gz
 
 BuildRequires:	perl(Devel::Caller)
 BuildRequires:	perl-devel
@@ -32,7 +32,6 @@ perl Makefile.PL INSTALLDIRS=vendor
 %makeinstall_std
 
 %files
-%doc README
 %{_mandir}/*/*
 %{perl_vendorarch}/Devel/*
 %{perl_vendorarch}/auto/Devel/*
@@ -78,4 +77,5 @@ perl Makefile.PL INSTALLDIRS=vendor
 
 * Fri Mar 24 2006 Rafael Garcia-Suarez <rgarciasuarez@mandriva.com> 0.04-1mdk
 - First Mandriva release
+
 
