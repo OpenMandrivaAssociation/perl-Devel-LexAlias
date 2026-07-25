@@ -2,14 +2,14 @@
 %define upstream_version 0.05
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Version:	%{upstream_version}
+Release:	4
 
 Summary:	Alias lexical variables
 License:	Artistic/GPL
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}/
-Source0:	http://www.cpan.org/modules/by-module/Devel/Devel-LexAlias-%{upstream_version}.tar.gz
+Url:		https://metacpan.org/dist/Devel-LexAlias
+Source0:	https://cpan.metacpan.org/authors/id/R/RC/RCLAMP/Devel-LexAlias-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl(Devel::Caller)
