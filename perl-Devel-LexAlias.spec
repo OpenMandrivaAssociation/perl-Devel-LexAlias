@@ -1,15 +1,13 @@
 %define upstream_name    Devel-LexAlias
-%define upstream_version 0.05
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	4
+Version:	0.05
+Release:	5
 
 Summary:	Alias lexical variables
 License:	Artistic/GPL
 Group:		Development/Perl
 Url:		https://metacpan.org/dist/Devel-LexAlias
-Source0:	https://cpan.metacpan.org/authors/id/R/RC/RCLAMP/Devel-LexAlias-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/R/RC/RCLAMP/Devel-LexAlias-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl(Devel::Caller)
@@ -20,7 +18,7 @@ Devel::LexAlias provides the ability to alias a lexical variable in a
 subroutines scope to one of your choosing.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
@@ -54,9 +52,7 @@ perl Makefile.PL INSTALLDIRS=vendor
 
 * Sat Aug 01 2009 JÃ©rÃ´me Quelin <jquelin@mandriva.org> 0.40.0-1mdv2010.0
 + Revision: 406980
-- rebuild using %%perl_convert_version
-
-* Thu Jul 31 2008 Thierry Vignaud <tv@mandriva.org> 0.04-6mdv2009.0
+- rebuild using %0.05 Thu Jul 31 2008 Thierry Vignaud <tv@mandriva.org> 0.04-6mdv2009.0
 + Revision: 256634
 - rebuild
 
